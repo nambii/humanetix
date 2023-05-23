@@ -1,0 +1,29 @@
+{
+  "ts-node": {
+    "transpileOnly": true,
+    "files": true,
+    "esm": true
+  },
+  "compilerOptions": {
+    "experimentalDecorators": true,
+    "module": "Node16",
+    "moduleResolution": "Node16",
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
+    "noImplicitAny": false,
+    "emitDecoratorMetadata": true,
+    "resolveJsonModule": true,
+    "sourceMap": true,
+    "declaration": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "esModuleInterop": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*", "dist/*"]
+    }
+  },
+  "include": ["./src/**/*/", "src/**/*.json"],
+  "exclude": ["node_modules"],
+  "filesGlob": ["typings.d.ts", "./src/**/*.js", "./src/**/*.ts"]
+}

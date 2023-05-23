@@ -1,0 +1,23 @@
+{
+  "name": "humanetix",
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=16"
+  },
+  "license": "UNLICENSED",
+  "scripts": {
+    "clean": "rm -rf ./dist",
+    "build": "yarn clean && tsc && resolve-tspaths",
+    "parse": "yarn build && node ./dist/parse.js"
+  },
+  "devDependencies": {
+    "@types/node": "^16.0.0",
+    "resolve-tspaths": "^0.8.13",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "dependencies": {
+    "stream-json": "^1.7.5"
+  }
+}
